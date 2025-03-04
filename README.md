@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# 🎮 Juego del Ahorcado en React  
+🚀 Un clásico juego del ahorcado desarrollado con **React, TypeScript y Hooks**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción  
+Este proyecto es una versión interactiva del juego del ahorcado donde el jugador debe adivinar una palabra antes de agotar los intentos. Cada error muestra una parte del ahorcado hasta completar la figura.
 
-Currently, two official plugins are available:
+🔹 **Tecnologías utilizadas:**  
+✅ React + Vite  
+✅ TypeScript  
+✅ Hooks (useState, useEffect)  
+✅ CSS para estilos  
+✅ Despliegue en Netlify  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎮 Demo en vivo  
+🔗 [Jugar ahora](https://ahorcadoreactlml.netlify.app/)  
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Funcionalidades  
+- Selección de palabras aleatorias.  
+- Interfaz intuitiva y responsive.  
+- Control de intentos y finalización automática del juego.  
+- Botón para reiniciar la partida.
+- 🔥 Aprendizajes
+En este proyecto aprendí y reforcé conocimientos sobre:
+✅ Manejo del estado con useState y efectos con useEffect.
+✅ Implementación de lógica para el control de intentos y validación de letras.
+✅ Uso de TypeScript para tipar los datos y mejorar la escalabilidad.
+✅ Despliegue de aplicaciones en Netlify.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+📬 Contacto
+💼 LinkedIn: https://www.linkedin.com/in/lautaro-lopez-b56aa7305/
+📌 GitHub: github.com/LautaroLopez
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+🌟 Si te gustó el proyecto, no olvides darle una estrella ⭐ en GitHub!
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
